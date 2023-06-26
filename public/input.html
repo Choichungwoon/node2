@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>등록</title>
+    <style>
+        h1 {
+            font-size: 30px;
+            color: #ccc;
+            text-transform: uppercase;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 10px;
+            margin: 0 auto;
+            width: 500px;
+        }
+
+        table th {
+            border-bottom: 3px double #ccc;
+            font-size: 1em;
+        }
+
+        table td {
+            border-bottom: 3px solid #ccc;
+            font-size: 0.8em;
+            padding: 10px 3px;
+        }
+
+        table td:nth-child(1),
+        table td:nth-child(6),
+        table td:nth-child(7) {
+            text-align: center;
+        }
+
+        table td:nth-child(6)>a,
+        table td:nth-child(7)>a {
+            text-align: center;
+            font-size: 0.8em;
+            background-color: rgb(96, 98, 97);
+            padding: 4px 5px 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        form{
+            margin: 0 auto;
+            width: 700px;
+        }
+        fieldset {
+            border: 0;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        form button {
+            background-color: rgb(5, 5, 5);
+            border: 0;
+            padding: 8px 10px 10px;
+            border-radius: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        table td:nth-child(6)>a:hover,
+        table td:nth-child(7)>a:hover,
+        form button:hover {
+            background-color: rgb(240, 243, 159);
+            color: #333;
+        }
+
+        form>fieldset>input[type=submit] {
+            margin-top: 10px;
+            background-color: rgb(5, 5, 5);
+            border: 0;
+            padding: 4px 5px 5px;
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+            margin-left: 515px;
+            width: 70px;
+        }
+
+        input[type=submit]:hover {
+            background-color: rgb(240, 243, 159);
+            color: #333;
+        }
+
+        input[type=text] {
+            border: 0;
+            border-left: 1px solid #ccc;
+        }
+
+        input[type=number] {
+            border: 0;
+            border-left: 1px solid #ccc;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <form action="/create" method="post">
+        <fieldset>
+            <h1>재고 등록</h1>
+            
+            <table>
+                <tr>
+                    <td>번호 : </td>
+                    <td> <input type="number" name="number" placeholder="click here"></td>
+                </tr>
+                <tr>
+                    <td>제품명 : </td>
+                    <td> <input type="text" name="name" placeholder="click here"></td>
+                </tr>
+                <tr>
+                    <td>개수 : </td>
+                    <td> <input type="number" name="quantity" placeholder="click here"></td>
+                </tr>
+                <tr>
+                    <td>가격 : </td>
+                    <td> <input type="number" name="price" step="10" placeholder="click here"></td>
+                </tr>
+                <tr>
+                    <td>상품 코드 : </td>
+                    <td> <input type="text" name="code" placeholder="click here"></td>
+                </tr>
+                <tr>
+                    <td>입고 시간 : </td>
+                    <td> <input type="text" name="time" placeholder="yy-mm-dd-hh-mm"></td>
+                </tr>
+            </table>
+            <input type="submit" value="등록">
+        </fieldset>
+        
+    </form>
+</body>
+
+</html>

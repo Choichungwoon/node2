@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductList</title>
+    <link rel="stylesheet" href="./csss.css">
+</head>
+
+<body>
+    <p id="log"><%= nickname %>  <a href="<%= loginlink %>"><%= login %></a></p>
+    <form method="get" action="/create" id="form1"> 
+        <button type="submit" id="input">재고 등록</button>
+    </form>
+    <table class="type09">
+        <tr>
+            <form action="search" method="get" class="search-form">
+                <div>
+                    <input type="text" class="search-bar" name="query" placeholder="상품명,가격,코드 중 입력하세요.">
+                    <button type="submit" class="search-button" value="">Search</button>
+                </div>
+            </form>
+        </tr>
+        <tr>
+            <th>번호</th>
+            <th>상품명</th>
+            <th>개수</th>
+            <th>가격</th>
+            <th>상품 코드</th>
+            <th>입고 시간</th>
+            <th>수정</th>
+            <th>삭제</th>
+        </tr>
+        <% data.forEach(function (productlist, index) { %>
+            <tr>
+                <td>
+                    <%= productlist.number %>
+                </td>
+                <td>
+                    <%= productlist.name %>
+                </td>
+                <td>
+                    <%= productlist.quantity %>
+                </td>
+                <td>
+                    <%= productlist.price %>
+                </td>
+                <td>
+                    <%= productlist.code %>
+                </td>
+                <td>
+                    <%= productlist.time %>
+                </td>
+                <td><a href="/modify/<%= productlist.number %>">수정</a></td>
+                <td><a href="/delete/<%= productlist.number %>">삭제</a></td>
+            </tr>
+            <% }); %>
+    </table>
+</body>
+
+</html>

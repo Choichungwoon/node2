@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+table.type09 {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    width: 100%;
+    margin-top: 15px;
+
+}
+
+table.type09 thead th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #369;
+    border-bottom: 3px solid #036;
+}
+
+table.type09 tbody th {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    background: #a2e3f8;
+}
+
+table.type09 td {
+    text-align: center;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+
+#input {
+    background-color: rgb(5, 5, 5);
+    border: 0;
+    padding: 8px 10px 10px;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+div {
+    height: 40px;
+    width: 400px;
+    border: 1px solid #1b5ac2;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 60px;
+
+}
+
+input {
+    font-size: 16px;
+    width: 325px;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    float: left;
+}
+
+div>button {
+    width: 50px;
+    height: 100%;
+    border: 0px;
+    background-color: #1b5ac2;
+    outline: none;
+    float: right;
+    color: #ffffff;
+}
+
+div>button:hover {
+    cursor: pointer;
+}
+
+#form1 {
+    float: right;
+    margin-top: 10px;
+}
+
+#form1::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+#log {
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+#log::after {
+    clear: both;
+    content: "";
+    display: block;
+}
