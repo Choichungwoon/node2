@@ -1,2 +1,3 @@
 # node2
-첫화면 로그인 ID:tjrtktjrtk PW:111111
+
+Node.js Express.js를 활용한 물품 CRUD 제작해 보았습니다.
