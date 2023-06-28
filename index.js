@@ -39,9 +39,9 @@ passport.deserializeUser(function (id, done) {
 
 
 const authData = {
-    username: 'tjrtktjrtk',
+    username: 'guest',
     password: '111111',
-    nickname: 'onetwo',
+    nickname: 'guest',
 };
 
 app.get('/', (req, res) => {
